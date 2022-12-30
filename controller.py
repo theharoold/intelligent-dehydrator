@@ -94,7 +94,7 @@ def handle_message(msg):
         if text == "/start":
             startDehydration(chat_id)
         elif text == "/stop":
-            stopDehydration()
+            stopDehydration(chat_id)
 
 def validate(input, chat_id):
     if not input in availableCommands:
